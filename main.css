@@ -1,0 +1,77 @@
+:root {
+  --light-grey-text: hsl(0, 0%, 81%);
+  --body-bg-color: hsl(210, 46%, 95%);
+  --moderate-violet: hsl(263, 55%, 52%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+body {
+  font-size: 0.8125rem;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background-color: var(--body-bg-color);
+  color: var(--light-grey-text);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 75%;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  padding-bottom: 2rem;
+  background-color: var(--moderate-violet);
+  border-radius: 0.5rem;
+}
+
+/* .x2-width {
+  grid-column: 1 / span 2;
+} */
+
+.student-details-wrapper {
+  display: flex;
+}
+
+.student-name-status-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1.5rem;
+}
+
+.student-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.student-image img {
+  border-radius: 50%;
+}
+
+.status {
+  opacity: 50%;
+}
+
+.testimonial-quote {
+  opacity: 70%;
+}
+
+.testimonial-heading {
+  margin: 1rem 0;
+}
+
+.light {
+  color: white;
+}
